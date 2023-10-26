@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Specify the folder you want to process
+folder="/WORKSPACE/Oscar/GBA_Haplotype_cDNA_03_10_23/run1/OG_17_08_23_cDNA_GBA/OG_17_08_23_cDNA_GBA_run1/20230817_1023_X1_FAW08549_d25885e9/fastq_pass/barcode02/"
+
+# Loop through all files in the folder
+for file in "$folder"/*; do
+  if [ -f "$file" ]; then
+    # Try to gunzip the file, and if it fails, continue to the next file
+    if gunzip "$file" 2>/dev/null; then
+      echo "Successfully decompressed: $file"
+    else
+      echo "Failed to decompress: $file"
+    fi
+  fi
+done
