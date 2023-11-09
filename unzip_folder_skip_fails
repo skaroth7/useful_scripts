@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the folder you want to process
-folder="/WORKSPACE/Oscar/GBA_Haplotype_cDNA_03_10_23/run1/OG_17_08_23_cDNA_GBA/OG_17_08_23_cDNA_GBA_run1/20230817_1023_X1_FAW08549_d25885e9/fastq_pass/barcode02/"
+folder="/WORKSPACE/Oscar/GBA_Haplotype_cDNA_03_10_23/run1/OG_17_08_23_cDNA_GBA/OG_17_08_23_cDNA_GBA_run1/20230817_1023_X1_FAW08549_d25885e9/fastq_pass/barcode02/" #replace with folder of interest
 
 # Loop through all files in the folder
 for file in "$folder"/*; do
